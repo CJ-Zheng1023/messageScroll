@@ -5,8 +5,23 @@
     <title></title>
 </head>
 <body>
-    <div style="width: 400px;overflow: hidden;border: 1px solid black;height: 100px;" id="outer">
-        <ul style="list-style: none;margin: 0px;" id="inner">
+    <h1 style="text-align: center;">向上滚动</h1>
+    <div style="width: 400px;overflow: hidden;border: 1px solid black;margin: 0 auto;height: 100px;" id="outer1">
+        <ul style="list-style: none;margin: 0px;" id="inner1">
+            <li>11111111111111111111111111</li>
+            <li>22222222222222222222222222</li>
+            <li>33333333333333333333333333</li>
+            <li>44444444444444444444444444</li>
+            <li>55555555555555555555555555</li>
+            <li>66666666666666666666666666</li>
+            <li>77777777777777777777777777</li>
+            <li>88888888888888888888888888</li>
+            <li>99999999999999999999999999</li>
+        </ul>
+    </div>
+    <h1 style="text-align: center;">向下滚动</h1>
+    <div style="width: 400px;overflow: hidden;border: 1px solid black;margin: 0 auto;height: 100px;" id="outer2">
+        <ul style="list-style: none;margin: 0px;" id="inner2">
             <li>11111111111111111111111111</li>
             <li>22222222222222222222222222</li>
             <li>33333333333333333333333333</li>
@@ -25,10 +40,15 @@
 <script src="js/jquery.messageScroll.js"></script>
 <script>
     $(function(){
-        $("#outer").messageScroll({
-            messageArea:"#inner",
+        $("#outer1").messageScroll({
+            messageArea:"#inner1",
             delay:50,
             direction:"up"
+        })
+        $("#outer2").messageScroll({
+            messageArea:"#inner2",
+            delay:50,
+            direction:"down"
         })
     })
 </script>
